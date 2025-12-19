@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green House Company - Agricultural Technology Consultant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">Green House Company</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#profile" class="nav-link">Our Profile</a></li>
+                <li><a href="#contact" class="nav-link">Message Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi <span id="userName">there</span>, Welcome to Webgine</h1>
+            <p class="hero-subtitle">Forward agriculture industry</p>
+            <p class="hero-description">Empowering sustainable agriculture through innovative technology and expert consultation</p>
+            <a href="#about" class="btn-primary">Explore More</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About the Company</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span class="placeholder-icon">🏢</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Leading Agricultural Technology Consultant</h3>
+                    <p>Green House Company is a premier consulting firm specializing in modern agricultural technology and sustainable farming solutions. We bridge the gap between traditional agriculture and cutting-edge innovation.</p>
+                    <p>With years of experience in the industry, we provide comprehensive consulting services including smart greenhouse design, precision farming technologies, IoT integration, and sustainable crop management systems.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Expert Consultation</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Innovative Solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Sustainable Practices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card">
+                    <div class="vm-icon">👁️</div>
+                    <h3>Vision</h3>
+                    <p>To be the leading agricultural technology consultant in Southeast Asia, driving sustainable innovation and transforming traditional farming into smart, efficient, and environmentally responsible operations by 2030.</p>
+                </div>
+                <div class="vm-card">
+                    <div class="vm-icon">🎯</div>
+                    <h3>Mission</h3>
+                    <p>We empower agricultural businesses through cutting-edge technology consultation, providing tailored solutions in smart greenhouse systems, precision agriculture, and sustainable farming practices that maximize productivity while preserving our environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Headquarters Section -->
+    <section id="profile" class="headquarters">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Headquarter</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="hq-grid">
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">👨‍💼</span>
+                        </div>
+                    </div>
+                    <h4>Jakarta</h4>
+                    <p>Main Office & Innovation Center</p>
+                </div>
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🌾</span>
+                        </div>
+                    </div>
+                    <h4>Bandung</h4>
+                    <p>Research & Development Hub</p>
+                </div>
+                <div class="hq-card">
+                    <div class="hq-image">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🔬</span>
+                        </div>
+                    </div>
+                    <h4>Surabaya</h4>
+                    <p>Technical Support Center</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Message Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="+62 812 3456 7890" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Choose a Subject</option>
+                                    <option value="consultation">Consultation Request</option>
+                                    <option value="partnership">Partnership Inquiry</option>
+                                    <option value="technology">Technology Solutions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your inquiry..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Head Office:</strong>
+                            <p>Jl. Sudirman No. 123<br>Jakarta Pusat, DKI Jakarta 10220</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <strong>Phone:</strong>
+                            <p>+62 21 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>info@greenhousecompany.id</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <strong>Working Hours:</strong>
+                            <p>Monday - Friday: 08:00 - 17:00<br>Saturday: 08:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Green House Company. All rights reserved.</p>
+            <p class="footer-credit">Created By Nanda</p>
+        </div>
+    </footer>
+
+    <!-- Form Submission Modal -->
+    <div id="submitModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">✓</div>
+            <h3>Message Sent Successfully!</h3>
+            <div id="submittedData" class="submitted-data"></div>
+            <button class="btn-close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
