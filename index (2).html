@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#maincontent">Skip to content</a>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
@@ -22,6 +23,8 @@
             </ul>
         </div>
     </nav>
+
+    <main id="maincontent" tabindex="-1">
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -48,7 +51,7 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-placeholder">
-                        <span class="placeholder-icon">🏢</span>
+                        <span class="placeholder-icon" role="img" aria-label="Company building">🏢</span>
                     </div>
                 </div>
                 <div class="about-text">
@@ -103,7 +106,7 @@
                 <div class="hq-card">
                     <div class="hq-image">
                         <div class="image-placeholder">
-                            <span class="placeholder-icon">👨‍💼</span>
+                            <span class="placeholder-icon" role="img" aria-label="Staff">👨‍💼</span>
                         </div>
                     </div>
                     <h4>Jakarta</h4>
@@ -112,7 +115,7 @@
                 <div class="hq-card">
                     <div class="hq-image">
                         <div class="image-placeholder">
-                            <span class="placeholder-icon">🌾</span>
+                            <span class="placeholder-icon" role="img" aria-label="Rice field">🌾</span>
                         </div>
                     </div>
                     <h4>Bandung</h4>
@@ -121,7 +124,7 @@
                 <div class="hq-card">
                     <div class="hq-image">
                         <div class="image-placeholder">
-                            <span class="placeholder-icon">🔬</span>
+                            <span class="placeholder-icon" role="img" aria-label="Laboratory">🔬</span>
                         </div>
                     </div>
                     <h4>Surabaya</h4>
@@ -213,6 +216,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -222,11 +227,11 @@
     </footer>
 
     <!-- Form Submission Modal -->
-    <div id="submitModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
+    <div id="submitModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content" aria-live="polite" aria-atomic="true">
+            <button type="button" class="close-modal" aria-label="Close dialog">&times;</button>
             <div class="modal-icon">✓</div>
-            <h3>Message Sent Successfully!</h3>
+            <h3 id="modalTitle">Message Sent Successfully!</h3>
             <div id="submittedData" class="submitted-data"></div>
             <button class="btn-close-modal">Close</button>
         </div>
